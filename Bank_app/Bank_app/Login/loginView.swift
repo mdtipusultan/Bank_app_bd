@@ -2,8 +2,6 @@
 //  loginView.swift
 //  Bank_app
 //
-//  Created by Rezwan Chowdhury on 29/7/24.
-//
 
 import SwiftUI
 
@@ -14,111 +12,115 @@ struct LoginView: View {
     @State private var rememberMe = false
     @State var isShowingPassword: Bool = false
     @State private var isLogged = false
-   
+    
     
     var body: some View {
         
-            NavigationStack{
-                VStack{
-                    Spacer()
-                    //app name
-                    Image("Capita")
-                        .resizable()
-                        .frame(width: 123, height: 46)
-                        .foregroundColor(.black)
-                    //Spacer()
-                    //form
+        NavigationStack{
+            VStack{
+                //Spacer()
+                //app logo
+                Image("bank_logo")
+                //                Spacer()
+                    .padding()
+                
+                
+                //form
+                
+                // Username TextField
+                VStack(alignment: .trailing) {
                     
-                    // Username TextField
-                    VStack(alignment: .trailing) {
-                        
-                        TextField("Enter your Username", text: $username)
-                        
-                            .padding(.vertical, 10)
-                            .padding(.horizontal, 10)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 1)
-                            )
-                        
-                        Text("User ID")
-                    }
-                    .padding(.horizontal)
+                    TextField("Enter your Username", text: $username)
                     
-                    // Password SecureField
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.black, lineWidth: 1)
+                        )
                     
-                    VStack(alignment: .trailing) {
-                        
-                        HStack {
-                            Group {
-                                if isShowingPassword {
-                                    TextField("Enter your password", text: $password)
-                                } else {
-                                    SecureField("Enter your password", text: $password)
-                                }
+                    Text("User ID")
+                }
+                .padding(.horizontal)
+                
+                // Password SecureField
+                
+                VStack(alignment: .trailing) {
+                    
+                    HStack {
+                        Group {
+                            if isShowingPassword {
+                                TextField("Enter your password", text: $password)
+                            } else {
+                                SecureField("Enter your password", text: $password)
                             }
-                            .disableAutocorrection(true)
-                            .autocapitalization(.none)
-                            .padding(.vertical, 10)
-                            .padding(.horizontal, 10)
-                            .overlay(alignment: .leading){
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 1)
-                                
-                                Button(action: {
-                                    isShowingPassword.toggle()
-                                }) {
-                                    Image(systemName: isShowingPassword ? "eye.slash.fill" : "eye.fill")
-                                        .foregroundColor(.black)
-                                }
-                                .padding(.leading, 280)
-                                
-                            }
+                        }
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 10)
+                        .overlay(alignment: .leading){
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.black, lineWidth: 1)
                             
+                            Button(action: {
+                                isShowingPassword.toggle()
+                            }) {
+                                Image(systemName: isShowingPassword ? "eye.slash.fill" : "eye.fill")
+                                    .foregroundColor(.black)
+                            }
+                            .padding(.leading, 280)
                             
                         }
-                        Text("User Password")
+                        
+                        
                     }
-                    .padding(.horizontal)
-                    
-//                    //remember & forget button
-//                    HStack{
-//                        HStack{
-//                            Image(systemName: rememberMe ? "checkmark.square.fill" : "square") // Use system icons for checkbox appearance
-//                                .resizable()
-//                                .frame(width: 20, height: 20)
-//                                .foregroundColor(.black)
-//                                .onTapGesture {
-//                                    rememberMe.toggle() // Toggle the state variable on tap
-//                                }
-//                            Text("Remember me")
-//                                .fontWeight(.light)
-//                                .font(.system(size: 14))
-//                            //.padding(.leading, -5)
-//                        }
-//                        .padding(.leading, 20)
-//                        Spacer()
-//                        NavigationLink {
-//                            //password_recovery()
-//                                //.navigationTitle("Password Recovery")
-//                            
-//                        } label: {
-//                            HStack{
-//                                Text("Forget Password?")
-//                                    .fontWeight(.medium)
-//                                    .underline()
-//                                    .foregroundColor(Color("AccentColor"))
-//                            }
-//                            .font(.system(size: 14))
-//                        }
-//                        .padding(.top,10)
-//                        .padding(.trailing,20)
-//                    }
-//                    
-                    //LOGIN button
+                    Text("User Password")
+                }
+                .padding(.horizontal)
+                
+                //                    //remember & forget button
+                //                    HStack{
+                //                        HStack{
+                //                            Image(systemName: rememberMe ? "checkmark.square.fill" : "square") // Use system icons for checkbox appearance
+                //                                .resizable()
+                //                                .frame(width: 20, height: 20)
+                //                                .foregroundColor(.black)
+                //                                .onTapGesture {
+                //                                    rememberMe.toggle() // Toggle the state variable on tap
+                //                                }
+                //                            Text("Remember me")
+                //                                .fontWeight(.light)
+                //                                .font(.system(size: 14))
+                //                            //.padding(.leading, -5)
+                //                        }
+                //                        .padding(.leading, 20)
+                //                        Spacer()
+                //                        NavigationLink {
+                //                            //password_recovery()
+                //                                //.navigationTitle("Password Recovery")
+                //
+                //                        } label: {
+                //                            HStack{
+                //                                Text("Forget Password?")
+                //                                    .fontWeight(.medium)
+                //                                    .underline()
+                //                                    .foregroundColor(Color("AccentColor"))
+                //                            }
+                //                            .font(.system(size: 14))
+                //                        }
+                //                        .padding(.top,10)
+                //                        .padding(.trailing,20)
+                //                    }
+                //
+                
+                
+                //LOGIN button
+                
+                HStack {
                     NavigationLink {
-                       // HomeView()
-                            //.navigationBarBackButtonHidden()
+                        // HomeView()
+                        //.navigationBarBackButtonHidden()
                     } label: {
                         HStack{
                             Text("Login")
@@ -129,75 +131,155 @@ struct LoginView: View {
                     }
                     .background(Color("AccentColor"))
                     .cornerRadius(10)
-                    .padding(.top,35)
                     
-                    
-                    //SIGN-UP BUTTON
                     NavigationLink {
-                        //RegistrationView()
-                            //.navigationTitle("Registration")
-                        
+                        // HomeView()
+                        //.navigationBarBackButtonHidden()
                     } label: {
                         HStack{
-                            Text("I don't have an account?")
-                                .foregroundColor(Color.black)
-                            Text("Sign Up")
-                                .fontWeight(.medium)
-                                .underline()
-                                .foregroundColor(Color("AccentColor"))
+                            //Text("Fingerprint")
+                            //.fontWeight(.semibold)
+                            Image("Fingerprint")
                         }
-                        .font(.system(size: 14))
+                        .foregroundColor(.white)
                     }
-                    .padding(.top,10)
+                    .cornerRadius(10)
                     
-                    
-                    
-                    //FACE OR TOUCH ID image
-                    Image("face_id") // Display Face ID or Touch ID image
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .foregroundColor(.black) // Set the image color if needed
-                        .padding(.top,30)
-                    
-                    //ADDING FACE OR TOUCHID
-//                    NavigationLink(destination: BiometricAuthView {
-//                        // Closure to handle successful biometric authentication
-//                        print("Biometric authentication successful")
-//                        // Proceed with login or any action after successful authentication
-//                    }) {
-//                        HStack{
-//                            Text("Don't have TouchID yet?")
-//                                .foregroundColor(Color.black)
-//                            Text("TouchID")
-//                                .fontWeight(.medium)
-//                                .underline()
-//                                .foregroundColor(Color("AccentColor"))
-//                        }
-//                        .font(.system(size: 14))
-//                    }
-//                    .padding(.top,10)
-                    Spacer()
-                    //shanta-image
-                    HStack{
-                        Image("ShantaLogo")
-                            .resizable()
-                            .frame(width: 60, height: 46)
-                            .foregroundColor(.black)
-                        
-                        Text("SHANTA")
-                            .fontWeight(.medium)
-                            .font(.title)
-                            .foregroundColor(Color("AccentColor"))
-                    }
-                    
-                    Spacer()
                 }
                 
+                //singleLine
+                //#C2C2C2
+                Divider()
+                    .background(Color(red: 194/255, green: 194/255, blue: 194/255)) // Set the divider color
+                    .frame(width: 200, height: 1) // Adjust the width and height of the divider
+                    .padding(.top, 20) // Add top padding
+                
+                //SIGN-UP BUTTON
+                NavigationLink {
+                    //RegistrationView()
+                    //.navigationTitle("Registration")
+                    
+                } label: {
+                    HStack{
+                        Text("New in Master Pay ?")
+                            .foregroundColor(Color.black)
+                        Text("Sign Up")
+                            .fontWeight(.medium)
+                            .underline()
+                            .foregroundColor(Color("accent_2"))
+                    }
+                    .font(.system(size: 14))
+                }
+                .padding(.top,10)
+                
+                //                Spacer()
+                
+                
+                //ekyc
+                VStack {
+                    Button(action: {
+                        // Action to perform when button is pressed
+                        print("Button pressed")
+                    }) {
+                        HStack {
+                            Spacer()
+                            Image("demo_logo_ekyc")
+                            //.foregroundColor(.white)
+                            Spacer()
+                            Text("Open Bank Account")
+                                .foregroundColor(Color("AccentColor"))
+                                .bold()
+                            Spacer()
+                            Spacer()
+                        }
+                        .frame(width: UIScreen.main.bounds.width - 60, height: 48)
+                        //.padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius:10)
+                                .stroke(Color("AccentColor"), lineWidth: 1)
+                        )
+                        .cornerRadius(10)
+                        
+                    }
+                    
+                    
+                }
+                
+                .padding()
+                
+                Spacer()
+                
+                //BUTTONS
+                HStack {
+                    Spacer()
+                    Spacer()
+                    Button(action: {
+                        // Action for the first button
+                        print("Button 1 pressed")
+                    }) {
+                        VStack {
+                            Image("location")
+                            Text("Location")
+                                .font(.footnote)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(uiColor: UIColor(red: 0.46, green: 0.46, blue: 0.46, alpha: 1.00)))
+                            
+                            
+                        }
+                    }
+                    
+                    Spacer()
+                    Divider()
+                        .frame(height: 50)
+                        .background(Color.gray)
+                    Spacer()
+                    
+                    Button(action: {
+                        // Action for the second button
+                        print("Button 2 pressed")
+                    }) {
+                        VStack {
+                            Image("contact")
+                            Text("Contact")
+                                .font(.footnote)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(uiColor: UIColor(red: 0.46, green: 0.46, blue: 0.46, alpha: 1.00)))
+                            
+                        }
+                    }
+                    
+                    Spacer()
+                    Divider()
+                        .frame(height: 50)
+                        .background(Color.gray)
+                    Spacer()
+                    
+                    Button(action: {
+                        // Action for the third button
+                        print("Button 3 pressed")
+                    }) {
+                        VStack {
+                            Image("explore")
+                            Text("Explore")
+                                .font(.footnote)
+                                .fontWeight(.light)
+                                .foregroundColor(Color(uiColor: UIColor(red: 0.46, green: 0.46, blue: 0.46, alpha: 1.00)))
+                            
+                        }
+                    }
+                    Spacer()
+                    Spacer()
+                }
+                .padding()
+                
+                //                Spacer()
             }
-            //.topSafeAreaColor()
+            
         }
-        
-        
+        //.topSafeAreaColor()
+    }
+    
+    
     
 }
 
