@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C7F2C5757770045F1CD /* Bank_appApp.swift */; };
-		7A915C822C5757770045F1CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C812C5757770045F1CD /* ContentView.swift */; };
 		7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C832C57577A0045F1CD /* Assets.xcassets */; };
 		7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C862C57577A0045F1CD /* Preview Assets.xcassets */; };
+		7A915C932C575B2F0045F1CD /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C922C575B2F0045F1CD /* loginView.swift */; };
+		7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C942C575B4E0045F1CD /* loginModel.swift */; };
+		7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C962C575B620045F1CD /* loginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A915C7C2C5757770045F1CD /* Bank_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A915C7F2C5757770045F1CD /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
-		7A915C812C5757770045F1CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A915C832C57577A0045F1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A915C862C57577A0045F1CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A915C922C575B2F0045F1CD /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		7A915C942C575B4E0045F1CD /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
+		7A915C962C575B620045F1CD /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		7A915C7E2C5757770045F1CD /* Bank_app */ = {
 			isa = PBXGroup;
 			children = (
-				7A915C7F2C5757770045F1CD /* Bank_appApp.swift */,
-				7A915C812C5757770045F1CD /* ContentView.swift */,
+				7A915C912C5757FE0045F1CD /* Login */,
+				7A915C902C5757FA0045F1CD /* Registration */,
+				7A915C8F2C5757F60045F1CD /* Initial */,
+				7A915C8E2C5757F20045F1CD /* New Group1 */,
+				7A915C8D2C5757EE0045F1CD /* New Group */,
 				7A915C832C57577A0045F1CD /* Assets.xcassets */,
 				7A915C852C57577A0045F1CD /* Preview Content */,
 			);
@@ -65,6 +72,45 @@
 				7A915C862C57577A0045F1CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A915C8D2C5757EE0045F1CD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7A915C8E2C5757F20045F1CD /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		7A915C8F2C5757F60045F1CD /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				7A915C7F2C5757770045F1CD /* Bank_appApp.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		7A915C902C5757FA0045F1CD /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		7A915C912C5757FE0045F1CD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7A915C922C575B2F0045F1CD /* loginView.swift */,
+				7A915C942C575B4E0045F1CD /* loginModel.swift */,
+				7A915C962C575B620045F1CD /* loginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A915C822C5757770045F1CD /* ContentView.swift in Sources */,
+				7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */,
+				7A915C932C575B2F0045F1CD /* loginView.swift in Sources */,
 				7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */,
+				7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
