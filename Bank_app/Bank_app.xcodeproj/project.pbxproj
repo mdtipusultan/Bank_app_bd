@@ -13,6 +13,8 @@
 		7A915C932C575B2F0045F1CD /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C922C575B2F0045F1CD /* loginView.swift */; };
 		7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C942C575B4E0045F1CD /* loginModel.swift */; };
 		7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C962C575B620045F1CD /* loginViewModel.swift */; };
+		7A915C992C575D510045F1CD /* master Pay 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C982C575D510045F1CD /* master Pay 1.png */; };
+		7A915C9B2C575E020045F1CD /* inputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C9A2C575E020045F1CD /* inputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		7A915C922C575B2F0045F1CD /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		7A915C942C575B4E0045F1CD /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
 		7A915C962C575B620045F1CD /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
+		7A915C982C575D510045F1CD /* master Pay 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master Pay 1.png"; sourceTree = "<group>"; };
+		7A915C9A2C575E020045F1CD /* inputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,7 @@
 				7A915C912C5757FE0045F1CD /* Login */,
 				7A915C902C5757FA0045F1CD /* Registration */,
 				7A915C8F2C5757F60045F1CD /* Initial */,
-				7A915C8E2C5757F20045F1CD /* New Group1 */,
+				7A915C8E2C5757F20045F1CD /* Utilities */,
 				7A915C8D2C5757EE0045F1CD /* New Group */,
 				7A915C832C57577A0045F1CD /* Assets.xcassets */,
 				7A915C852C57577A0045F1CD /* Preview Content */,
@@ -77,15 +81,17 @@
 		7A915C8D2C5757EE0045F1CD /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				7A915C982C575D510045F1CD /* master Pay 1.png */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		7A915C8E2C5757F20045F1CD /* New Group1 */ = {
+		7A915C8E2C5757F20045F1CD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7A915C9A2C575E020045F1CD /* inputField.swift */,
 			);
-			path = "New Group1";
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		7A915C8F2C5757F60045F1CD /* Initial */ = {
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */,
+				7A915C992C575D510045F1CD /* master Pay 1.png in Resources */,
 				7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +193,7 @@
 				7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */,
 				7A915C932C575B2F0045F1CD /* loginView.swift in Sources */,
 				7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */,
+				7A915C9B2C575E020045F1CD /* inputField.swift in Sources */,
 				7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
