@@ -1,7 +1,7 @@
 //
 //  loginView.swift
 //  Bank_app
-//
+// Created by Finjet on 29/7/24.
 
 import SwiftUI
 
@@ -69,7 +69,7 @@ struct LoginView: View {
                                 Image(systemName: isShowingPassword ? "eye.slash.fill" : "eye.fill")
                                     .foregroundColor(.black)
                             }
-                            .padding(.leading, 280)
+                            .padding(.leading, 300)
                             
                         }
                         
@@ -119,8 +119,8 @@ struct LoginView: View {
                 
                 HStack {
                     NavigationLink {
-                        // HomeView()
-                        //.navigationBarBackButtonHidden()
+                         HomeView()
+                        .navigationBarBackButtonHidden()
                     } label: {
                         HStack{
                             Text("Login")
@@ -272,7 +272,7 @@ struct LoginView: View {
                 }
                 .padding()
                 
-                //                Spacer()
+                //Spacer()
             }
             
         }

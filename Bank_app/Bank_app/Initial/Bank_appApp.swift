@@ -2,7 +2,7 @@
 //  Bank_appApp.swift
 //  Bank_app
 //
-//  Created by Rezwan Chowdhury on 29/7/24.
+//  Created by Finjet on 29/7/24.
 //
 
 import SwiftUI

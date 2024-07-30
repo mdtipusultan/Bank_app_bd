@@ -2,7 +2,7 @@
 //  inputField.swift
 //  Bank_app
 //
-//  29/7/24.
+//  Created by Finjet on 29/7/24.
 //
 
 
@@ -16,10 +16,8 @@ struct inputField: View {
     
     var body: some View {
         
-       
-            
         VStack(alignment: .trailing,spacing: 12){
-                            
+            
             if isSecureField{
                 SecureField(placeHolder, text: $text)
                     .font(.system(size: 14))
@@ -36,9 +34,6 @@ struct inputField: View {
                 .font(.footnote)
         }
         
-        
-        
-            
     }
 }
 

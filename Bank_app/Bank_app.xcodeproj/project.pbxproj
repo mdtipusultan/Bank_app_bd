@@ -10,11 +10,18 @@
 		7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C7F2C5757770045F1CD /* Bank_appApp.swift */; };
 		7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C832C57577A0045F1CD /* Assets.xcassets */; };
 		7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C862C57577A0045F1CD /* Preview Assets.xcassets */; };
-		7A915C932C575B2F0045F1CD /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C922C575B2F0045F1CD /* loginView.swift */; };
-		7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C942C575B4E0045F1CD /* loginModel.swift */; };
-		7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C962C575B620045F1CD /* loginViewModel.swift */; };
-		7A915C992C575D510045F1CD /* master Pay 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C982C575D510045F1CD /* master Pay 1.png */; };
-		7A915C9B2C575E020045F1CD /* inputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C9A2C575E020045F1CD /* inputField.swift */; };
+		7A915C932C575B2F0045F1CD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C922C575B2F0045F1CD /* LoginView.swift */; };
+		7A915C952C575B4E0045F1CD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C942C575B4E0045F1CD /* LoginModel.swift */; };
+		7A915C972C575B630045F1CD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C962C575B620045F1CD /* LoginViewModel.swift */; };
+		7A915C9B2C575E020045F1CD /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C9A2C575E020045F1CD /* InputField.swift */; };
+		7AA6E6DA2C589DE60000F04A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6D92C589DE60000F04A /* HomeModel.swift */; };
+		7AA6E6DE2C589E310000F04A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6DD2C589E310000F04A /* HomeViewModel.swift */; };
+		7AA6E6E02C589E460000F04A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6DF2C589E460000F04A /* HomeView.swift */; };
+		7AA6E6E32C58A2770000F04A /* BaseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6E22C58A2760000F04A /* BaseHome.swift */; };
+		7AA6E6E92C58AC6D0000F04A /* TransferHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6E82C58AC6D0000F04A /* TransferHistoryView.swift */; };
+		7AA6E6EB2C58ACA50000F04A /* QRCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6EA2C58ACA50000F04A /* QRCashView.swift */; };
+		7AA6E6ED2C58ACC50000F04A /* TransferLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6EC2C58ACC50000F04A /* TransferLimitView.swift */; };
+		7AA6E6EF2C58ACFC0000F04A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6EE2C58ACFC0000F04A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +29,18 @@
 		7A915C7F2C5757770045F1CD /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
 		7A915C832C57577A0045F1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A915C862C57577A0045F1CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7A915C922C575B2F0045F1CD /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
-		7A915C942C575B4E0045F1CD /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
-		7A915C962C575B620045F1CD /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
-		7A915C982C575D510045F1CD /* master Pay 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "master Pay 1.png"; sourceTree = "<group>"; };
-		7A915C9A2C575E020045F1CD /* inputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputField.swift; sourceTree = "<group>"; };
+		7A915C922C575B2F0045F1CD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7A915C942C575B4E0045F1CD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		7A915C962C575B620045F1CD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7A915C9A2C575E020045F1CD /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		7AA6E6D92C589DE60000F04A /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7AA6E6DD2C589E310000F04A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7AA6E6DF2C589E460000F04A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7AA6E6E22C58A2760000F04A /* BaseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHome.swift; sourceTree = "<group>"; };
+		7AA6E6E82C58AC6D0000F04A /* TransferHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferHistoryView.swift; sourceTree = "<group>"; };
+		7AA6E6EA2C58ACA50000F04A /* QRCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCashView.swift; sourceTree = "<group>"; };
+		7AA6E6EC2C58ACC50000F04A /* TransferLimitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferLimitView.swift; sourceTree = "<group>"; };
+		7AA6E6EE2C58ACFC0000F04A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +73,16 @@
 		7A915C7E2C5757770045F1CD /* Bank_app */ = {
 			isa = PBXGroup;
 			children = (
+				7AA6E6E72C58AA5B0000F04A /* Settings */,
+				7AA6E6E62C58AA580000F04A /* TransferLimit */,
+				7AA6E6E52C58AA540000F04A /* QRCash */,
+				7AA6E6E42C58AA500000F04A /* TransferHistory */,
+				7AA6E6E12C58A2560000F04A /* BaseHome */,
+				7AA6E6D42C589CC00000F04A /* Home */,
 				7A915C912C5757FE0045F1CD /* Login */,
 				7A915C902C5757FA0045F1CD /* Registration */,
 				7A915C8F2C5757F60045F1CD /* Initial */,
 				7A915C8E2C5757F20045F1CD /* Utilities */,
-				7A915C8D2C5757EE0045F1CD /* New Group */,
 				7A915C832C57577A0045F1CD /* Assets.xcassets */,
 				7A915C852C57577A0045F1CD /* Preview Content */,
 			);
@@ -78,18 +97,10 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7A915C8D2C5757EE0045F1CD /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				7A915C982C575D510045F1CD /* master Pay 1.png */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		7A915C8E2C5757F20045F1CD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				7A915C9A2C575E020045F1CD /* inputField.swift */,
+				7A915C9A2C575E020045F1CD /* InputField.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -112,11 +123,61 @@
 		7A915C912C5757FE0045F1CD /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				7A915C922C575B2F0045F1CD /* loginView.swift */,
-				7A915C942C575B4E0045F1CD /* loginModel.swift */,
-				7A915C962C575B620045F1CD /* loginViewModel.swift */,
+				7A915C922C575B2F0045F1CD /* LoginView.swift */,
+				7A915C942C575B4E0045F1CD /* LoginModel.swift */,
+				7A915C962C575B620045F1CD /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		7AA6E6D42C589CC00000F04A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6DF2C589E460000F04A /* HomeView.swift */,
+				7AA6E6D92C589DE60000F04A /* HomeModel.swift */,
+				7AA6E6DD2C589E310000F04A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7AA6E6E12C58A2560000F04A /* BaseHome */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6E22C58A2760000F04A /* BaseHome.swift */,
+			);
+			path = BaseHome;
+			sourceTree = "<group>";
+		};
+		7AA6E6E42C58AA500000F04A /* TransferHistory */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6E82C58AC6D0000F04A /* TransferHistoryView.swift */,
+			);
+			path = TransferHistory;
+			sourceTree = "<group>";
+		};
+		7AA6E6E52C58AA540000F04A /* QRCash */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6EA2C58ACA50000F04A /* QRCashView.swift */,
+			);
+			path = QRCash;
+			sourceTree = "<group>";
+		};
+		7AA6E6E62C58AA580000F04A /* TransferLimit */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6EC2C58ACC50000F04A /* TransferLimitView.swift */,
+			);
+			path = TransferLimit;
+			sourceTree = "<group>";
+		};
+		7AA6E6E72C58AA5B0000F04A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7AA6E6EE2C58ACFC0000F04A /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */,
-				7A915C992C575D510045F1CD /* master Pay 1.png in Resources */,
 				7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,11 +250,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A915C972C575B630045F1CD /* loginViewModel.swift in Sources */,
-				7A915C932C575B2F0045F1CD /* loginView.swift in Sources */,
+				7A915C972C575B630045F1CD /* LoginViewModel.swift in Sources */,
+				7A915C932C575B2F0045F1CD /* LoginView.swift in Sources */,
+				7AA6E6EB2C58ACA50000F04A /* QRCashView.swift in Sources */,
+				7AA6E6DE2C589E310000F04A /* HomeViewModel.swift in Sources */,
 				7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */,
-				7A915C9B2C575E020045F1CD /* inputField.swift in Sources */,
-				7A915C952C575B4E0045F1CD /* loginModel.swift in Sources */,
+				7AA6E6ED2C58ACC50000F04A /* TransferLimitView.swift in Sources */,
+				7AA6E6DA2C589DE60000F04A /* HomeModel.swift in Sources */,
+				7AA6E6E02C589E460000F04A /* HomeView.swift in Sources */,
+				7AA6E6E92C58AC6D0000F04A /* TransferHistoryView.swift in Sources */,
+				7A915C9B2C575E020045F1CD /* InputField.swift in Sources */,
+				7AA6E6E32C58A2770000F04A /* BaseHome.swift in Sources */,
+				7A915C952C575B4E0045F1CD /* LoginModel.swift in Sources */,
+				7AA6E6EF2C58ACFC0000F04A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
