@@ -13,9 +13,14 @@ struct HomeView: View {
         ZStack {
             // Top Safe Area Color
             Color("AccentColor")
-                //.edgesIgnoringSafeArea(.top)
+                .edgesIgnoringSafeArea(.top)
+            Color.red
+            VStack{
+                
+                Text("ff")
+            }
         }
-        .ignoresSafeArea()
+        
     }
     
     
