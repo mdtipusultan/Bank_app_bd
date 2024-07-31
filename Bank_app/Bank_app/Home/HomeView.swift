@@ -12,14 +12,11 @@ struct HomeView: View {
         ScrollView {
             VStack(spacing: 20) {
                 
-                // Balance Section (Tappable)
-                Button(action: {
-                    // Handle tap action
-                }) {
-                    BalanceSectionView()
+                // ProfileSection Section
+              
+                    ProfileSectionView()
                         .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(PlainButtonStyle())
+               
                 
                 // Recent Transactions Section
                 RecentTransactionsSectionView(transactions: [
@@ -38,25 +35,32 @@ struct HomeView: View {
                 // Help & Support Section
                 HelpSupportSectionView()
             }
-            .padding()
+            //.padding()
         }
     }
 }
 
 // Balance Section
-struct BalanceSectionView: View {
+struct ProfileSectionView: View {
     var body: some View {
         HStack(spacing: 20) {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 50, height: 50)
+            Button(action: {
+                            // Handle profile image tap action
+                        }) {
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                        .buttonStyle(PlainButtonStyle())
             
             VStack(alignment: .leading) {
-                Text("John Doe")
+                Text("Welcome")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                    
+                Text("Tipu Sultan")
                     .font(.headline)
                 
-                Text("Current Balance: $12,345.67")
-                    .font(.subheadline)
             }
             
             Spacer()
@@ -64,23 +68,25 @@ struct BalanceSectionView: View {
             Button(action: {
                 // Handle notification action
             }) {
-                Image(systemName: "bell.fill")
+                Image("bell")
                     .resizable()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.blue)
+                    //.foregroundColor(.yellow)
             }
             
             Button(action: {
                 // Handle logout action
             }) {
-                Text("Logout")
-                    .foregroundColor(.red)
+                Image("logout")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    //.foregroundColor(.blue)
             }
         }
-        .padding()
-        .background(Color(.systemBackground))
-        .cornerRadius(10)
-        .shadow(radius: 5)
+        .padding(.leading)
+        .padding(.trailing)
+        //.background(Color(.systemBackground))
+        Divider()
     }
 }
 
