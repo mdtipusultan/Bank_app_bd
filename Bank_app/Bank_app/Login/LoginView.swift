@@ -19,8 +19,8 @@ struct LoginView: View {
             NavigationStack{
                 GeometryReader { geometry in
                     VStack {
-                        // Top Safe Area Color
-                        Color("AccentColor") // Replace with your desired color
+//                        // Top Safe Area Color
+                        Color("AccentColor")
                             .frame(height: geometry.safeAreaInsets.top)
                             .edgesIgnoringSafeArea(.top)
                         VStack{
@@ -31,7 +31,8 @@ struct LoginView: View {
                                 .padding()
                                 .ignoresSafeArea()
                             
-                            
+                                .padding(.top,-60)
+                                
                             //form
                             
                             // Username TextField
@@ -125,7 +126,8 @@ struct LoginView: View {
                             
                             HStack {
                                 NavigationLink {
-                                    HomeView()
+                                    //HomeView()
+                                    BaseHome()
                                         .navigationBarBackButtonHidden()
                                 } label: {
                                     HStack{
@@ -214,6 +216,7 @@ struct LoginView: View {
                             .padding()
                             
                             Spacer()
+                           
                             
                             //BUTTONS
                             HStack {

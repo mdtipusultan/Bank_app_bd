@@ -9,10 +9,7 @@ import SwiftUI
 
 struct TransferHistoryView: View {
     var body: some View {
-        ZStack {
-            Color.red
-                .edgesIgnoringSafeArea(.top) // Only the top safe area will be red
-                (Color.white) // Main background color
+      
             VStack {
                 
                 Text("transfer")
@@ -20,7 +17,7 @@ struct TransferHistoryView: View {
                 // Your other view content
             }
             
-        }
+        
         
     }
 }

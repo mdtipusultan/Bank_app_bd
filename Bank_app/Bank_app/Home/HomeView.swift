@@ -10,20 +10,21 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         
-        ZStack {
-            // Top Safe Area Color
-            Color("AccentColor")
-                .edgesIgnoringSafeArea(.top)
-            Color.red
+        
+//        ZStack {
+//            // Top Safe Area Color
+//            Color("AccentColor")
+//                .edgesIgnoringSafeArea(.top)
+//            Color.red
             VStack{
+                Text("tips for u ")
                 
-                Text("ff")
             }
-        }
+        //}
+     
+        
         
     }
-    
-    
 }
 
 #Preview {

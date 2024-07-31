@@ -98,7 +98,7 @@ struct CustomTabBar: View {
                 selectedTab = 0
             }
             Spacer()
-            TabBarButton(imageName: "transfer_history", title: "History", isSelected: selectedTab == 1) {
+            TabBarButton(imageName: "transfer_history", title: "Transfer History", isSelected: selectedTab == 1) {
                 selectedTab = 1
             }
             Spacer()
@@ -106,7 +106,7 @@ struct CustomTabBar: View {
                 selectedTab = 2
             }
             Spacer()
-            TabBarButton(imageName: "transfer_limit", title: "Limits", isSelected: selectedTab == 3) {
+            TabBarButton(imageName: "transfer_limit", title: "Transfer Limit", isSelected: selectedTab == 3) {
                 selectedTab = 3
             }
             Spacer()
@@ -116,8 +116,8 @@ struct CustomTabBar: View {
         }
         .padding(.leading)
         .padding(.trailing)
-        .frame(height: 60)
-        .background(Color.gray.opacity(0.1))
+        .frame(height: 68)
+        .background(Color.gray.opacity(0.5))
     }
 }
 
@@ -131,7 +131,7 @@ struct TabBarButton: View {
         VStack {
             
             if title == "" {
-                // Do not change the icon color for QR Cash
+                // for not changing the icon color for QR Cash
                 Image(uiImage: UIImage(named: imageName)!)
             } else {
                 // Change the icon color for other tabs
@@ -140,8 +140,9 @@ struct TabBarButton: View {
                     .foregroundColor(isSelected ? Color("AccentColor") : .gray)
             }
             Text(title)
-                .font(.footnote)
+                .font(.caption2)
                 .foregroundColor(isSelected ? Color("AccentColor") : .gray)
+                
         }
         //.padding()
         .onTapGesture {
