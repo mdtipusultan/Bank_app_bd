@@ -46,13 +46,13 @@ struct Bank_appApp: App {
     func setupAppearance() {
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()
-        coloredAppearance.backgroundColor =  UIColor(Color("AccentColor"))// UIColor.red Set your desired color here
+        coloredAppearance.backgroundColor =  UIColor(Color("ThemeColor"))
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
         
         if let statusBarFrame = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame {
             let statusBarView = UIView(frame: statusBarFrame)
-            statusBarView.backgroundColor = UIColor(Color("AccentColor"))//UIColor.red // Set your desired color here
+            statusBarView.backgroundColor = UIColor(Color("ThemeColor"))
             UIApplication.shared.windows.first?.addSubview(statusBarView)
         }
     }

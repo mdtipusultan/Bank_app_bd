@@ -137,11 +137,11 @@ struct TabBarButton: View {
                 // Change the icon color for other tabs
                 Image(uiImage: UIImage(named: imageName)!)
                     .renderingMode(.template)
-                    .foregroundColor(isSelected ? Color("AccentColor") : .gray)
+                    .foregroundColor(isSelected ? Color("PrimaryColor") : .gray)
             }
             Text(title)
                 .font(.caption2)
-                .foregroundColor(isSelected ? Color("AccentColor") : .gray)
+                .foregroundColor(isSelected ? Color("PrimaryColor") : .gray)
                 
         }
         //.padding()

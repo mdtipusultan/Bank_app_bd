@@ -20,7 +20,7 @@ struct LoginView: View {
                 GeometryReader { geometry in
                     VStack {
 //                        // Top Safe Area Color
-                        Color("AccentColor")
+                        Color("ThemeColor")
                             .frame(height: geometry.safeAreaInsets.top)
                             .edgesIgnoringSafeArea(.top)
                         VStack{
@@ -137,7 +137,7 @@ struct LoginView: View {
                                     .foregroundColor(.white)
                                     .frame(width: UIScreen.main.bounds.width - 100, height: 48)
                                 }
-                                .background(Color("AccentColor"))
+                                .background(Color("PrimaryColor"))
                                 .cornerRadius(10)
                                 
                                 NavigationLink {
@@ -195,7 +195,7 @@ struct LoginView: View {
                                         //.foregroundColor(.white)
                                         Spacer()
                                         Text("Open Bank Account")
-                                            .foregroundColor(Color("AccentColor"))
+                                            .foregroundColor(Color("PrimaryColor"))
                                             .bold()
                                         Spacer()
                                         Spacer()
@@ -204,7 +204,7 @@ struct LoginView: View {
                                     //.padding()
                                     .overlay(
                                         RoundedRectangle(cornerRadius:10)
-                                            .stroke(Color("AccentColor"), lineWidth: 1)
+                                            .stroke(Color("PrimaryColor"), lineWidth: 1)
                                     )
                                     .cornerRadius(10)
                                     
