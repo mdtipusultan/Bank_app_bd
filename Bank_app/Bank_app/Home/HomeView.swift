@@ -85,6 +85,41 @@ struct ProfileSectionView: View {
     }
 }
 
+//struct ImageCollectionSectionView: View {
+//    let images: [String]
+//    @State private var selectedIndex = 0
+//
+//    var body: some View {
+//        VStack {
+//            TabView(selection: $selectedIndex) {
+//                ForEach(0..<images.count, id: \.self) { index in
+//                    NavigationLink(destination: ImageDetailView(imageName: images[index])) {
+//                        Image(images[index])
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fill)
+//                            .frame(width: UIScreen.main.bounds.width - 60, height: 200)
+//                            .clipped()
+//                            .cornerRadius(10)
+//                            .tag(index)
+//                    }
+//                }
+//            }
+//            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+//            .frame(height: 200)
+//
+//            HStack {
+//                ForEach(0..<images.count, id: \.self) { index in
+//                    Circle()
+//                        .fill(index == selectedIndex ? Color.black : Color.gray)
+//                        .frame(width: 8, height: 8)
+//                }
+//            }
+//            .padding(.top, 8)
+//        }
+//    }
+//}
+
+
 struct ImageCollectionSectionView: View {
     let images: [String]
     @State private var selectedIndex = 0
@@ -97,11 +132,12 @@ struct ImageCollectionSectionView: View {
                         Image(images[index])
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: UIScreen.main.bounds.width - 60, height: 200)
+                            .frame(width: UIScreen.main.bounds.width - 40, height: 200) // Adjust width for partial views
                             .clipped()
                             .cornerRadius(10)
                             .tag(index)
                     }
+                    //.padding(.horizontal, 20) // Add padding for partial views
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))

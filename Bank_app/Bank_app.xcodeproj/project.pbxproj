@@ -14,6 +14,7 @@
 		7A915C952C575B4E0045F1CD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C942C575B4E0045F1CD /* LoginModel.swift */; };
 		7A915C972C575B630045F1CD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C962C575B620045F1CD /* LoginViewModel.swift */; };
 		7A915C9B2C575E020045F1CD /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C9A2C575E020045F1CD /* InputField.swift */; };
+		7A9733772C5BBF350097CA46 /* SignUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9733762C5BBF350097CA46 /* SignUPView.swift */; };
 		7AA6E6DA2C589DE60000F04A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6D92C589DE60000F04A /* HomeModel.swift */; };
 		7AA6E6DE2C589E310000F04A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6DD2C589E310000F04A /* HomeViewModel.swift */; };
 		7AA6E6E02C589E460000F04A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6E6DF2C589E460000F04A /* HomeView.swift */; };
@@ -33,6 +34,7 @@
 		7A915C942C575B4E0045F1CD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		7A915C962C575B620045F1CD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7A915C9A2C575E020045F1CD /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		7A9733762C5BBF350097CA46 /* SignUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPView.swift; sourceTree = "<group>"; };
 		7AA6E6D92C589DE60000F04A /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7AA6E6DD2C589E310000F04A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7AA6E6DF2C589E460000F04A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		7A915C7E2C5757770045F1CD /* Bank_app */ = {
 			isa = PBXGroup;
 			children = (
+				7A9733752C5BBEDD0097CA46 /* SignUP */,
 				7AA6E6E72C58AA5B0000F04A /* Settings */,
 				7AA6E6E62C58AA580000F04A /* TransferLimit */,
 				7AA6E6E52C58AA540000F04A /* QRCash */,
@@ -128,6 +131,14 @@
 				7A915C962C575B620045F1CD /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		7A9733752C5BBEDD0097CA46 /* SignUP */ = {
+			isa = PBXGroup;
+			children = (
+				7A9733762C5BBF350097CA46 /* SignUPView.swift */,
+			);
+			path = SignUP;
 			sourceTree = "<group>";
 		};
 		7AA6E6D42C589CC00000F04A /* Home */ = {
@@ -262,6 +273,7 @@
 				7A915C9B2C575E020045F1CD /* InputField.swift in Sources */,
 				7AA6E6E32C58A2770000F04A /* BaseHome.swift in Sources */,
 				7A915C952C575B4E0045F1CD /* LoginModel.swift in Sources */,
+				7A9733772C5BBF350097CA46 /* SignUPView.swift in Sources */,
 				7AA6E6EF2C58ACFC0000F04A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
