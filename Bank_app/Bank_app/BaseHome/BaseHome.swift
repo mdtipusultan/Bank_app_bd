@@ -117,7 +117,7 @@ struct CustomTabBar: View {
         .padding(.leading)
         .padding(.trailing)
         .frame(height: 68)
-        .background(Color.gray.opacity(0.5))
+        //.background(Color.gray.opacity(0.5))
     }
 }
 
@@ -142,7 +142,7 @@ struct TabBarButton: View {
             Text(title)
                 .font(.caption2)
                 .foregroundColor(isSelected ? Color("PrimaryColor") : .gray)
-                
+            
         }
         //.padding()
         .onTapGesture {
@@ -150,7 +150,6 @@ struct TabBarButton: View {
         }
     }
 }
-
 
 #Preview {
     BaseHome()

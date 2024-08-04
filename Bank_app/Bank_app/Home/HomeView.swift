@@ -24,24 +24,19 @@ struct HomeView: View {
                     
                     
                     // Icon Grid Section
-                                       IconGridSectionView(icons: [
-                                           "transfer", "exchange rate", "billpay", "topup",
-                                           "history", "prayer-time", "request", "more"
-                                       ], moreIcons: [
-                                        "history", "prayer-time", "request", "exchange rate"
-                                       ])
-                    
-                    
-                    
-                    // Recent Transactions Section
-                    RecentTransactionsSectionView(transactions: [
-                        Transaction(description: "Starbucks", amount: "-$5.00", date: "Jul 30"),
-                        Transaction(description: "Amazon", amount: "-$50.00", date: "Jul 29"),
-                        Transaction(description: "Salary", amount: "+$3000.00", date: "Jul 28")
+                    IconGridSectionView(icons: [
+                        "transfer", "exchange rate", "billpay", "topup",
+                        "history", "prayer-time", "request", "more"
+                    ], moreIcons: [
+                        "history", "prayer-time", "request", "exchange rate"
                     ])
                     
-                    // Help & Support Section
-                    HelpSupportSectionView()
+                    
+                    // Exclusive Section
+                                       ExclusiveSectionView(images: [
+                                           "banner", "banner", "banner", "banner"
+                                       ])
+                   
                 }
                 //.padding()
             }
@@ -134,7 +129,7 @@ struct ProfileSectionView: View {
 struct ImageCollectionSectionView: View {
     let images: [String]
     @State private var selectedIndex = 0
-
+    
     var body: some View {
         VStack {
             TabView(selection: $selectedIndex) {
@@ -153,7 +148,7 @@ struct ImageCollectionSectionView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .frame(height: 200)
-
+            
             HStack {
                 ForEach(0..<images.count, id: \.self) { index in
                     Circle()
@@ -202,7 +197,7 @@ struct IconGridSectionView: View {
                             Image(iconName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                //.frame(width: 50, height: 50)
+                            //.frame(width: 50, height: 50)
                         }
                         //.frame(width: 100, height: 100)
                         //.background(Color(.systemGray6))
@@ -318,7 +313,7 @@ struct MoreView: View {
                             Image(iconName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                
+                            
                         }
                         .frame(width: 100, height: 100)
                         .cornerRadius(10)
@@ -353,70 +348,41 @@ struct MoreView: View {
     }
 }
 
-// Recent Transactions Section
-struct RecentTransactionsSectionView: View {
-    let transactions: [Transaction]
+// Exclusive Section
+struct ExclusiveSectionView: View {
+    
+    let images: [String]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Recent Transactions")
+            Text("Exclusive")
                 .font(.headline)
             
-            ForEach(transactions, id: \.id) { transaction in
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(transaction.description)
-                        Text(transaction.date)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    Spacer()
-                    Text(transaction.amount)
-                        .foregroundColor(transaction.amount.hasPrefix("-") ? .red : .green)
-                }
-            }
+            ScrollView(.horizontal, showsIndicators: false) {
+                      HStack(spacing: 15) {
+                          ForEach(images, id: \.self) { imageName in
+                              Image(imageName)
+                                  .resizable()
+                                  .aspectRatio(contentMode: .fill)
+                                  //.frame(width: 150, height: 150)
+                                  .clipped()
+                                  .cornerRadius(10)
+                          }
+                      }
+                      //.padding(.horizontal)
+                  }
             
-            Divider()
         }
         .padding()
-        .background(Color(.systemBackground))
+        
+        //.background(Color(.systemBackground))
         .cornerRadius(10)
-        .shadow(radius: 5)
+        //.shadow(radius: 5)
     }
-}
-
-// Help & Support Section
-struct HelpSupportSectionView: View {
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Help & Support")
-                .font(.headline)
-            
-            Button(action: {
-                // Handle contact support action
-            }) {
-                Text("Contact Support")
-                    .font(.body)
-                    .foregroundColor(.blue)
-            }
-            
-            Divider()
-        }
-        .padding()
-        .background(Color(.systemBackground))
-        .cornerRadius(10)
-        .shadow(radius: 5)
-    }
-}
-
-// Transaction model
-struct Transaction: Identifiable {
-    let id = UUID()
-    let description: String
-    let amount: String
-    let date: String
 }
 
 #Preview {
     HomeView()
 }
+
+
