@@ -110,6 +110,9 @@ struct LoginView: View {
                         
                         NavigationLink {
                             // Destination view for Registration
+                            FirstScreen()
+                                .navigationTitle("Signup")
+                                
                         } label: {
                             HStack {
                                 Text("New in Master Pay ?")
@@ -212,35 +215,41 @@ struct LoginView_Previews: PreviewProvider {
 struct ForgotUserIDView: View {
     var body: some View {
         Text("Forgot User ID View")
+            .navigationTitle("Forgot User ID")
     }
 }
 
 struct ForgotPasswordView: View {
     var body: some View {
         Text("Forgot Password View")
+            .navigationTitle("Forgot Password")
     }
 }
 
 struct OpenBankAccountView: View {
     var body: some View {
         Text("Open Bank Account View")
+            .navigationTitle("Open Bank Account")
     }
 }
 
 struct LocationView: View {
     var body: some View {
         Text("Location View")
+            .navigationTitle("Location")
     }
 }
 
 struct ContactView: View {
     var body: some View {
         Text("Contact View")
+            .navigationTitle("Contact")
     }
 }
 
 struct ExploreView: View {
     var body: some View {
         Text("Explore View")
+            .navigationTitle("Explore")
     }
 }
