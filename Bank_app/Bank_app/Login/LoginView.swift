@@ -33,7 +33,7 @@ struct LoginView: View {
                                 .padding(.horizontal, 10)
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 5)
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.gray, lineWidth: 1)
                                 )
                             
                             NavigationLink(destination: ForgotUserIDView()) {
@@ -58,7 +58,7 @@ struct LoginView: View {
                                 .padding(.horizontal, 10)
                                 .overlay(alignment: .leading) {
                                     RoundedRectangle(cornerRadius: 5)
-                                        .stroke(Color.black, lineWidth: 1)
+                                        .stroke(Color.gray, lineWidth: 1)
                                     
                                     Button(action: {
                                         isShowingPassword.toggle()
