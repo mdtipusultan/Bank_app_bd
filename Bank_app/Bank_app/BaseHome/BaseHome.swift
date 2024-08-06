@@ -116,7 +116,7 @@ struct CustomTabBar: View {
         }
         .padding(.leading)
         .padding(.trailing)
-        .frame(height: 68)
+        .frame(height: 50)
         //.background(Color.gray.opacity(0.5))
     }
 }

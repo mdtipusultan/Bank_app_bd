@@ -10,6 +10,7 @@
 		7A34B08D2C61905800A3D6B0 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B08C2C61905800A3D6B0 /* FirstScreen.swift */; };
 		7A34B0902C61907A00A3D6B0 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B08F2C61907A00A3D6B0 /* SecondScreen.swift */; };
 		7A34B0922C61908B00A3D6B0 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B0912C61908B00A3D6B0 /* ThirdScreen.swift */; };
+		7A34B0962C61E01D00A3D6B0 /* OnboardingPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B0952C61E01D00A3D6B0 /* OnboardingPagerView.swift */; };
 		7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C7F2C5757770045F1CD /* Bank_appApp.swift */; };
 		7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C832C57577A0045F1CD /* Assets.xcassets */; };
 		7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C862C57577A0045F1CD /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		7A34B08C2C61905800A3D6B0 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		7A34B08F2C61907A00A3D6B0 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		7A34B0912C61908B00A3D6B0 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		7A34B0952C61E01D00A3D6B0 /* OnboardingPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerView.swift; sourceTree = "<group>"; };
 		7A915C7C2C5757770045F1CD /* Bank_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A915C7F2C5757770045F1CD /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
 		7A915C832C57577A0045F1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				7A34B08C2C61905800A3D6B0 /* FirstScreen.swift */,
 				7A34B08F2C61907A00A3D6B0 /* SecondScreen.swift */,
 				7A34B0912C61908B00A3D6B0 /* ThirdScreen.swift */,
+				7A34B0952C61E01D00A3D6B0 /* OnboardingPagerView.swift */,
 			);
 			path = OnScreenSignUP;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				7A915C972C575B630045F1CD /* LoginViewModel.swift in Sources */,
 				7A915C932C575B2F0045F1CD /* LoginView.swift in Sources */,
 				7AA6E6EB2C58ACA50000F04A /* QRCashView.swift in Sources */,
+				7A34B0962C61E01D00A3D6B0 /* OnboardingPagerView.swift in Sources */,
 				7AA6E6DE2C589E310000F04A /* HomeViewModel.swift in Sources */,
 				7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */,
 				7AA6E6ED2C58ACC50000F04A /* TransferLimitView.swift in Sources */,

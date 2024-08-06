@@ -110,8 +110,10 @@ struct LoginView: View {
                         
                         NavigationLink {
                             // Destination view for Registration
-                            FirstScreen()
+                            OnboardingPagerView()
+                            //FirstScreen()
                                 .navigationTitle("Signup")
+                            
                                 
                         } label: {
                             HStack {
