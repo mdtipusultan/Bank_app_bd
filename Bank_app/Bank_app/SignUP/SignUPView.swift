@@ -12,44 +12,111 @@ struct SignUPView: View {
     @State private var selectedAccountType: AccountType = .regular
     
     // State variables for the input fields
-    @State private var firstName: String = ""
-    @State private var lastName: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var confirmPassword: String = ""
-    @State private var phoneNumber: String = ""
+    @State private var UserID: String = ""
+    @State private var AccountNumber: String = ""
+    @State private var AccountName: String = ""
+    @State private var MobileNumber: String = ""
+    @State private var DateOfBirth: String = ""
+    @State private var NIDno: String = ""
+    
+    // State variables for the date picker
+    @State private var isDatePickerPresented = false
+    @State private var selectedDate = Date()
     
     var body: some View {
-        VStack {
-            Picker("Account Type", selection: $selectedAccountType) {
-                ForEach(AccountType.allCases, id: \.self) { type in
-                    Text(type.rawValue.capitalized)
-                        .tag(type)
+        ScrollView {
+            VStack {
+                Picker("Account Type", selection: $selectedAccountType) {
+                    ForEach(AccountType.allCases, id: \.self) { type in
+                        Text(type.rawValue.capitalized)
+                            .tag(type)
+                    }
                 }
+                .pickerStyle(SegmentedPickerStyle())
+                .frame(height: 45)
+                .scaleEffect(CGSize(width: 1, height: 1.2))
+                .scaledToFit()
+                .padding(8)
+                //.background(Color.secondary)
+                .background(Color(UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)))
+                .cornerRadius(15)
+                .padding()
+                
+                
+                // input fields
+                InputFieldBorder(text: $UserID, placeholder: "Enter your user ID", fieldName: "User ID")
+                InputFieldBorder(text: $AccountNumber, placeholder: "Enter your account number", fieldName: "Account Number")
+                InputFieldBorder(text: $AccountName, placeholder: "Enter your account name", fieldName: "Account Name")
+                InputFieldBorder(text: $MobileNumber, placeholder: "Enter your mobile number", fieldName: "Mobile Number")
+                    .textContentType(.telephoneNumber)
+
+                //InputFieldBorder(text: $DateOfBirth, placeholder: "DD/MM/YYYY", fieldName: "Date Of Birth")
+                InputFieldBorder(
+                                   text: $DateOfBirth,
+                                   placeholder: "DD/MM/YYYY",
+                                   fieldName: "Date Of Birth",
+                                   trailingImage: "calendar",
+                                   trailingAction: {
+                                       isDatePickerPresented = true
+                                   }
+                               )
+
+                InputFieldBorder(text: $NIDno, placeholder: "Enter your NID number", fieldName: "NID no")
+                
+                
+                HStack{
+                    Button {
+                        //
+                    } label: {
+                        Image("mark")
+                    }
+                    
+                    Text("I agree with this")
+                        .font(.system(size: 13))
+                    Text("Terms & Conditions")
+                        .font(.system(size: 13))
+                        .foregroundColor(Color("PrimaryColor"))
+                }
+                .padding()
+                
+                NavigationLink {
+                    SignUpSubmitView()
+                        //.navigationBarBackButtonHidden()
+                } label: {
+                    HStack {
+                        Text("Next")
+                            .fontWeight(.semibold)
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: UIScreen.main.bounds.width - 100, height: 48)
+                }
+                .background(Color("PrimaryColor"))
+                .cornerRadius(10)
             }
-            .pickerStyle(SegmentedPickerStyle())
-            //.frame(height: 45)
-            .scaleEffect(CGSize(width: 1, height: 1.2))
-            .scaledToFit()
-            .padding(8)
-            .background(Color(UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)))
-            .cornerRadius(15)
-            .padding()
-            
-            
-            // input fields
-                    InputFieldBorder(text: $firstName, placeholder: "First Name", fieldName: "First Name")
-                    InputFieldBorder(text: $lastName, placeholder: "Last Name", fieldName: "Last Name")
-                    InputFieldBorder(text: $email, placeholder: "Email", fieldName: "Email")
-                    InputFieldBorder(text: $password, placeholder: "Password", fieldName: "Password")
-                   InputFieldBorder(text: $confirmPassword, placeholder: "Confirm Password", fieldName: "Confirm Password")
-                    InputFieldBorder(text: $phoneNumber, placeholder: "Phone Number", fieldName: "Phone Number")
-            
-            Spacer()
         }
+        
         .navigationTitle("Sign Up")
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton)
+        .sheet(isPresented: $isDatePickerPresented) {
+            VStack {
+                DatePicker(
+                    "Select Date",
+                    selection: $selectedDate,
+                    displayedComponents: .date
+                )
+                .datePickerStyle(WheelDatePickerStyle())
+                .labelsHidden()
+                
+                Button("Done") {
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "dd/MM/yyyy"
+                    DateOfBirth = dateFormatter.string(from: selectedDate)
+                    isDatePickerPresented = false
+                }
+                .padding()
+            }
+        }
     }
     
     private var backButton: some View {
@@ -59,9 +126,9 @@ struct SignUPView: View {
         }) {
             HStack {
                 Image(systemName: "chevron.left")
-                    .foregroundColor(.blue) // Customize the color
+                    .foregroundColor(.blue)
                 Text("")
-                    .foregroundColor(.clear) // Hide the text
+                    .foregroundColor(.clear)
             }
         }
     }
