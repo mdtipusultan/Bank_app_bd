@@ -11,6 +11,14 @@ struct SignUPView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var selectedAccountType: AccountType = .regular
     
+    // State variables for the input fields
+    @State private var firstName: String = ""
+    @State private var lastName: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var confirmPassword: String = ""
+    @State private var phoneNumber: String = ""
+    
     var body: some View {
         VStack {
             Picker("Account Type", selection: $selectedAccountType) {
@@ -19,9 +27,8 @@ struct SignUPView: View {
                         .tag(type)
                 }
             }
-            
             .pickerStyle(SegmentedPickerStyle())
-            .frame(height: 45)
+            //.frame(height: 45)
             .scaleEffect(CGSize(width: 1, height: 1.2))
             .scaledToFit()
             .padding(8)
@@ -29,9 +36,14 @@ struct SignUPView: View {
             .cornerRadius(15)
             .padding()
             
-            // Additional content can go here, based on the selected account type
-            Text("Selected account type: \(selectedAccountType.rawValue.capitalized)")
-                .padding()
+            
+            // input fields
+                    InputFieldBorder(text: $firstName, placeholder: "First Name", fieldName: "First Name")
+                    InputFieldBorder(text: $lastName, placeholder: "Last Name", fieldName: "Last Name")
+                    InputFieldBorder(text: $email, placeholder: "Email", fieldName: "Email")
+                    InputFieldBorder(text: $password, placeholder: "Password", fieldName: "Password")
+                   InputFieldBorder(text: $confirmPassword, placeholder: "Confirm Password", fieldName: "Confirm Password")
+                    InputFieldBorder(text: $phoneNumber, placeholder: "Phone Number", fieldName: "Phone Number")
             
             Spacer()
         }
