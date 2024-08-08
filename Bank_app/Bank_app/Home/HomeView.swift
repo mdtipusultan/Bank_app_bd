@@ -267,12 +267,6 @@ struct BillPayView: View {
     }
 }
 
-struct TopUpView: View {
-    var body: some View {
-        Text("Top Up View")
-            .navigationTitle("Top Up")
-    }
-}
 
 struct HistoryView: View {
     var body: some View {

@@ -200,7 +200,7 @@ struct SignUPView: View {
                     text: $DateOfBirth,
                     placeholder: "DD/MM/YYYY",
                     fieldName: "Date Of Birth",
-                    trailingImage: "calendar",
+                    trailingImage: Image("calendar"),
                     trailingAction: {
                         isDatePickerPresented = true
                     }

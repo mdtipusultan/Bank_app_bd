@@ -13,6 +13,9 @@
 		7A34B0962C61E01D00A3D6B0 /* OnboardingPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B0952C61E01D00A3D6B0 /* OnboardingPagerView.swift */; };
 		7A34B0982C633A5000A3D6B0 /* InputFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B0972C633A5000A3D6B0 /* InputFieldBorder.swift */; };
 		7A34B09B2C63814200A3D6B0 /* SignUpSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B09A2C63814200A3D6B0 /* SignUpSubmitView.swift */; };
+		7A34B09D2C650D2A00A3D6B0 /* TopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B09C2C650D2A00A3D6B0 /* TopUpView.swift */; };
+		7A34B0A02C65241900A3D6B0 /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B09F2C65241900A3D6B0 /* DropdownView.swift */; };
+		7A34B0A22C65302900A3D6B0 /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34B0A12C65302900A3D6B0 /* ContactPicker.swift */; };
 		7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A915C7F2C5757770045F1CD /* Bank_appApp.swift */; };
 		7A915C842C57577A0045F1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C832C57577A0045F1CD /* Assets.xcassets */; };
 		7A915C872C57577A0045F1CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A915C862C57577A0045F1CD /* Preview Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		7A34B0952C61E01D00A3D6B0 /* OnboardingPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerView.swift; sourceTree = "<group>"; };
 		7A34B0972C633A5000A3D6B0 /* InputFieldBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldBorder.swift; sourceTree = "<group>"; };
 		7A34B09A2C63814200A3D6B0 /* SignUpSubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSubmitView.swift; sourceTree = "<group>"; };
+		7A34B09C2C650D2A00A3D6B0 /* TopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpView.swift; sourceTree = "<group>"; };
+		7A34B09F2C65241900A3D6B0 /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		7A34B0A12C65302900A3D6B0 /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 		7A915C7C2C5757770045F1CD /* Bank_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A915C7F2C5757770045F1CD /* Bank_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appApp.swift; sourceTree = "<group>"; };
 		7A915C832C57577A0045F1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +93,14 @@
 			path = SignUpSubmit;
 			sourceTree = "<group>";
 		};
+		7A34B09E2C650D3100A3D6B0 /* TopUp */ = {
+			isa = PBXGroup;
+			children = (
+				7A34B09C2C650D2A00A3D6B0 /* TopUpView.swift */,
+			);
+			path = TopUp;
+			sourceTree = "<group>";
+		};
 		7A915C732C5757770045F1CD = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 		7A915C7E2C5757770045F1CD /* Bank_app */ = {
 			isa = PBXGroup;
 			children = (
+				7A34B09E2C650D3100A3D6B0 /* TopUp */,
 				7A9733752C5BBEDD0097CA46 /* SignUP */,
 				7AA6E6E72C58AA5B0000F04A /* Settings */,
 				7AA6E6E62C58AA580000F04A /* TransferLimit */,
@@ -136,6 +151,8 @@
 			children = (
 				7A915C9A2C575E020045F1CD /* InputField.swift */,
 				7A34B0972C633A5000A3D6B0 /* InputFieldBorder.swift */,
+				7A34B09F2C65241900A3D6B0 /* DropdownView.swift */,
+				7A34B0A12C65302900A3D6B0 /* ContactPicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -300,6 +317,7 @@
 				7A34B09B2C63814200A3D6B0 /* SignUpSubmitView.swift in Sources */,
 				7AA6E6EB2C58ACA50000F04A /* QRCashView.swift in Sources */,
 				7A34B0962C61E01D00A3D6B0 /* OnboardingPagerView.swift in Sources */,
+				7A34B0A02C65241900A3D6B0 /* DropdownView.swift in Sources */,
 				7AA6E6DE2C589E310000F04A /* HomeViewModel.swift in Sources */,
 				7A915C802C5757770045F1CD /* Bank_appApp.swift in Sources */,
 				7AA6E6ED2C58ACC50000F04A /* TransferLimitView.swift in Sources */,
@@ -311,6 +329,8 @@
 				7AA6E6E32C58A2770000F04A /* BaseHome.swift in Sources */,
 				7A915C952C575B4E0045F1CD /* LoginModel.swift in Sources */,
 				7A9733772C5BBF350097CA46 /* SignUPView.swift in Sources */,
+				7A34B0A22C65302900A3D6B0 /* ContactPicker.swift in Sources */,
+				7A34B09D2C650D2A00A3D6B0 /* TopUpView.swift in Sources */,
 				7A34B0982C633A5000A3D6B0 /* InputFieldBorder.swift in Sources */,
 				7AA6E6EF2C58ACFC0000F04A /* SettingsView.swift in Sources */,
 				7A34B0922C61908B00A3D6B0 /* ThirdScreen.swift in Sources */,
