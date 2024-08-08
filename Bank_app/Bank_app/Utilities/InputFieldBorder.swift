@@ -103,7 +103,7 @@ struct InputFieldBorder: View {
                     .padding(.horizontal)
                     .frame(height: height)
                 
-                if let trailingImage = trailingImage {
+                if trailingImage != nil {
                     Button(action: {
                         trailingAction?()
                     }) {

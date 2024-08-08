@@ -107,6 +107,37 @@ struct SignUpSubmitView: View {
               }
               .padding(.top, 20)
             
+            //Text("Didn’t you receive the OTP? Resend OTP")
+            // Resend OTP Text with Button
+                    HStack(spacing: 0) {
+                        Text("Didn’t you receive the OTP? ")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color(UIColor(red: 0.23, green: 0.23, blue: 0.23, alpha: 1.00)))
+                        
+                        Button(action: {
+                            // Action for resending the OTP
+                            print("Resend OTP tapped")
+                        }) {
+                            Text("Resend OTP")
+                                .font(.system(size: 12))
+                                .foregroundColor(Color.blue)
+                        }
+                    }
+                    .padding(.top, 20)
+            // Submit Button
+                      Button(action: {
+                          // Action for the submit button
+                          print("Submit tapped")
+                      }) {
+                          Text("Submit")
+                              .fontWeight(.semibold)
+                              .foregroundColor(.white)
+                              .frame(width: UIScreen.main.bounds.width - 100, height: 48)
+                              .background(Color("PrimaryColor"))
+                              .cornerRadius(10)
+                      }
+                      .padding()
+                      .padding()
         }
         .navigationTitle("Sign Up")
     }
